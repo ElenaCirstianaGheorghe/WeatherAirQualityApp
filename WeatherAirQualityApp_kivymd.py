@@ -178,7 +178,7 @@ class AirControlApp(MDApp):
 
         self.icon_name = self.api_weather['weather'][0]['icon']
         self.root.get_screen(
-                    "weather").ids.icon_label.icon = f'D:\Work\PROJECTS\Air quality\Icons\{self.icon_name}@2x.png'
+                    "weather").ids.icon_label.icon = f'Icons\{self.icon_name}@2x.png'  #don't forget to write the path for the directory where the Icons file is stored 
 
         self.temp_kelvin = self.api_weather['main']['temp']
         self.temp_celsius = int(self.temp_kelvin - 273.15)

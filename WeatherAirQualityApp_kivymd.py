@@ -14,7 +14,7 @@ import json
 import WeatherAirQualityApp_pollutionlevels as pollution_levels
 from WeatherAirQualityApp_helper import KV
 
-#Window.size = (300, 500)
+Window.size = (300, 500)
 
 class Container(IRightBodyTouch, MDBoxLayout):
     adaptive_width = True
